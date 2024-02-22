@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
- <head>
+
+<head>
     <title>PACKING PAGE</title>
- </head>
+</head>
+
 <body>
-<h1>Margana Dinesh packs for a trip</h1>
-<h2>Getting input</h2>
-<form action="">
-    <label for="packlight">Pack Light</label>
-    <input type="checkbox" id="packlight" value="true">
-    <label for="Carryon">Carry on</label>
-    <input type="checkbox" id="carryon" value="true">
-    <label for="tablet">Tablet</label>
-    <input type="checkbox" id="tablet" value="false">
-    <input type="button" value="Select for Packing" onclick="selectpack()">
-</form>
+    <h1>Margana packs for a trip</h1>
+    <h2>Getting input</h2>
+    <form action="">
+        <label for="packlight">Pack Light</label>
+        <input type="checkbox" id="packlight" value="true">
+        <label for="Carryon">Carry on</label>
+        <input type="checkbox" id="carryon" value="true">
+        <label for="tablet">Tablet</label>
+        <input type="checkbox" id="tablet" value="false">
+        <input type="button" value="Select for Packing" onclick="selectpack()">
+    </form>
 
 
-<p id="results">This text will be replaced </p>
-<form>
-    <label for="month">Enter travel month</label>
-    <input type ="text" id="month" name="month" value="May"> <br>
+    <p id="results">This text will be replaced </p>
+    <form>
+        <label for="month">Enter travel month</label>
+        <input type="text" id="month" value="May"> <br>
 
-    <label for="price">Enter price</label>
-    <input type ="text" id="price" name="price" value=""> <br>
+        <label for="price">Enter price</label>
+        <input type="text" id="price" value=""> <br>
 
-    <input type="button" onclick="updatePack()" value="Update the pack">
-</form>
+        <input type="button" onclick="updatePack()" value="Update the pack">
+    </form>
 
 
-<p id="result">This text will be replaced </p>
-
-<script> 
+    <script>
 
 var my_pack={};
 function selectpack()
@@ -53,7 +53,10 @@ function updatePack()
     document.getElementById("result").textContent=JSON.stringify(my_pack);
 
 }
-</script>
+
+        
+    </script>
 
 </body>
-</html> 
+
+</html>
