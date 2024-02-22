@@ -53,6 +53,15 @@
             wrongResult.innerHTML = `Wrong Count: ${wrong}`
         }
     }
+
+     /*
+      Sorry, too many wrong guesses. Bonus if conditional statement
+      */
+      document.getElementById("result").innerHTML = `Correct: ${correct}, Wrong: ${wrong}`;
+      if (wrong > correct) {
+        alert(`Sorry, too many wrong guesses.`);
+      }
+    
      let useImage = 1;
     function selectImage()
     {
